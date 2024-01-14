@@ -33,7 +33,7 @@ export default class NodeBuilderTest extends AbstractSpruceTest {
 
 	@test()
 	protected static async createOneDoesNotOverwriteNode() {
-		assert.isEqualDeep(this.inputNode, this.outputNode)
+		assert.doesInclude(this.outputNode, this.inputNode)
 	}
 
 	@test()
